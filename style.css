@@ -73,11 +73,22 @@ nav ul li button:hover {
     justify-content: center;
     width: 1000px;
     background-color: #11001C;
-    height: 1000px;
     border-radius: 90px;
     text-align: center;
     color: white;
     font-family: "Montserrat";
+}
+
+#content-music {
+    height: 700px;
+}
+
+#content-videos {
+    height: 1300px;
+}
+
+#content-home {
+    height: 600px;
 }
 
 .banana {
@@ -182,4 +193,8 @@ nav ul li button:hover {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.video {
+
 }
