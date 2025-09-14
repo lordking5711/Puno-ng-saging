@@ -1,12 +1,86 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puno ng Saging</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
+  <header class="page-title">
+  <h1>Puno ng Saging</h1>
+</header>
+  
+  <nav class="navbar">
+  <ul>
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#videos">Video</a></li>
+    <li><a href="#music">Music</a></li>
+  </ul>
+</nav>
+
+  <div id="main-player" class="main-player hidden">
+    <video id="player" controls></video>
+  </div>
+
+  <h2>Video Suggestions</h2>
+  <div class="slider">
+    <div class="card" onclick=".mp4">
+      <div class="thumb"></div>
+      <p>Almadra</p>
+    </div>
+    <div class="card" onclick="playVideo('video.mp4')">
+      <div class="thumb"></div>
+      <p>Yerro</p>
+    </div>
+    <div class="card" onclick="playVideo('video3.mp4')">
+      <div class="thumb"></div>
+      <p>Maglipon</p>
+    </div>
+    <div class="card" onclick="playVideo('video.mp4')">
+  <div class="thumb"></div>
+  <p>Sardido</p>
+</div>
+
+  </div>
+
+  <h2>Music Suggestions</h2>
+  <div class="music-list">
+    <div class="music-card">
+      <p>Almadra</p>
+      <audio controls>
+        <source src="music1.mp3" type="audio/mp3">
+      </audio>
+    </div>
+    <div class="music-card">
+      <p>Yerro</p>
+      <audio controls>
+        <source src="music2.mp3" type="audio/mp3">
+      </audio>
+    </div>
+    <div class="music-card">
+      <p>Maglipon</p>
+      <audio controls>
+        <source src="music3.mp3" type="audio/mp3">
+      </audio>
+    </div>
+    <div class="music-card">
+  <p>Sardido</p>
+  <audio controls>
+    <source src="music3.mp3" type="audio/mp3">
+  </audio>
     
+  </div>
+
+  <script>
+    function playVideo(file) {
+      const mainPlayer = document.getElementById("main-player");
+      const video = document.getElementById("player");
+      video.src = file;
+      mainPlayer.classList.remove("hidden");
+      video.play();
+    }
+  </script>
+
 </body>
 </html>
