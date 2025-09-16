@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    background-color: #3A015C;
+    background-color: #E6E1C5;
 }
 
 header {
@@ -10,7 +10,7 @@ header {
     position: fixed;
     width: 100%;
     height: 100px;
-    background-color: #11001c;
+    background-color: #395C6B;
     text-align: center;
     color: white;
     box-shadow: 2px 10px 63px -2px rgba(0,0,0,0.75);
@@ -46,7 +46,7 @@ nav ul li button {
     color: white;
     padding: 20px;
     border: none;
-    background-color: #0b0012;
+    background-color: #223c47;
     border-radius: 30px;
     transition-duration: 0.5s;
 }
@@ -58,7 +58,7 @@ nav ul li button a {
 
 nav ul li button:hover {
     box-shadow: 0px 0px 20px -2px rgba(255, 255, 255, 0.75);
-    background-color: #08000d;
+    background-color: #132229;
     padding: 25px;
     border: white;
 }
@@ -72,7 +72,7 @@ nav ul li button:hover {
     align-content:  center;
     justify-content: center;
     width: 1000px;
-    background-color: #11001C;
+    background-color: #395C6B;
     border-radius: 90px;
     text-align: center;
     color: white;
@@ -152,7 +152,6 @@ nav ul li button:hover {
     align-content: center;
     justify-content: space-around;
     display: flex;
-    background-color: #11001C;
     box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.75);
     margin-top: 20px;
 
@@ -193,4 +192,46 @@ nav ul li button:hover {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.comment-section {
+    box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.75);
+    width: 500px;
+    justify-self: center;
+margin: 0;
+padding: 0;
+border-radius: 25px;
+}
+
+.comment {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+
+.like-btn {
+    background: none;
+    border: none;
+}
+
+.like-btn {
+    filter: brightness(0) saturate(100%) invert(11%) sepia(88%) saturate(3758%) hue-rotate(354deg) brightness(99%) contrast(88%);
+    transition-duration: 0.5s;
+}
+
+.like-btn:hover {
+    transform: scale(1.2);
+box-shadow: 0px 0px 20px -2px rgb(255, 0, 0)(0,0,0,0.1);    
+}
+
+.comment-section div * {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.vid {
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.75);
 }
